@@ -26,7 +26,7 @@ test:
 	. .venv/bin/activate && python -m pytest
 
 cov:
-	. .venv/bin/activate && coverage run -m pytest && coverage report -m
+	. .venv/bin/activate && pytest -q --cov=src/lpe --cov-report=term-missing
 
 precommit:
 	. .venv/bin/activate && pre-commit install && pre-commit run -a
