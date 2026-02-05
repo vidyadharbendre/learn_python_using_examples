@@ -1,4 +1,4 @@
-default_stages: [commit, push]
+default_stages: [pre-commit, pre-push]
 fail_fast: false
 
 exclude: |
@@ -74,4 +74,4 @@ repos:
         entry: pytest -q
         language: system
         types: [python]
-        stages: [push]
+        stages: [pre-push]
