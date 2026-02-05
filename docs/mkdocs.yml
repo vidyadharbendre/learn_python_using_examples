@@ -1,0 +1,8 @@
+site_name: Learn Python Using Examples
+site_description: Production-grade Python learning repository
+repo_name: learn_python_using_examples
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Reference:
+      - Overview: README.md
