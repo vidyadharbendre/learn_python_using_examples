@@ -1,0 +1,18 @@
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C90"]
+ignore = ["E501"] # handled by formatter
+preview = true
+
+[format]
+quote-style = "double"
+indent-style = "space"
+
+[lint.isort]
+known-first-party = ["lpe"]
+
+[lint.mccabe]
+max-complexity = 12
