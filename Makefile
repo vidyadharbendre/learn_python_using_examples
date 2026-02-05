@@ -23,7 +23,7 @@ type:
 	. .venv/bin/activate && mypy src
 
 test:
-	. .venv/bin/activate && pytest
+	. .venv/bin/activate && python -m pytest
 
 cov:
 	. .venv/bin/activate && coverage run -m pytest && coverage report -m
